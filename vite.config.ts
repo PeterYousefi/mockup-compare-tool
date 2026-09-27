@@ -8,6 +8,13 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
     pages: [{ path: "/" }],
-    prerender: { enabled: true, autoStaticPathsDiscovery: false },
+    prerender: {
+      enabled: true,
+      autoStaticPathsDiscovery: false,
+      // Only render the explicit pages list — never follow links like
+      // /resume.pdf or /images/* and try to render them as routes.
+      crawlLinks: false,
+      filter: ({ path }: { path: string }) => path === "/",
+    },
   },
 });
