@@ -14,7 +14,7 @@ export default defineConfig({
       // Only render the explicit pages list — never follow links like
       // /resume.pdf or /images/* and try to render them as routes.
       crawlLinks: false,
-      filter: ({ path }) => path === "/",
+      filter: ({ path }: { path: string }) => path === "/",
     },
   },
 });
