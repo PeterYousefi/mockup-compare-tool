@@ -23,7 +23,7 @@ export const projects: Project[] = [
       "Set the safety model — synthetic data only, AI output treated as untrusted and validated against strict schemas, no remediation without explicit approval. Azure deployment is design-only (Bicep templates, nothing provisioned); AI provider is a deterministic mock by default.",
     stack: ["Next.js", "TypeScript", "FastAPI", "PostgreSQL", "Docker", "GitHub Actions", "Azure Bicep"],
     links: [
-      { label: "GitHub", href: "https://github.com/" },
+      { label: "GitHub", href: "https://github.com/PeterYousefi/AegisOps" },
       { label: "Azure-ready design", tag: true },
     ],
     image: "/images/aegisops.jpg",
@@ -39,8 +39,8 @@ export const projects: Project[] = [
       "Set the rule that every number shown must trace to a committed data artifact, with tests enforcing it; README states plainly what's unmeasured or blocked.",
     stack: ["Python", "FastAPI", "React", "Astropy", "pytest", "GitHub Actions"],
     links: [
-      { label: "Live app", href: "https://example.com" },
-      { label: "GitHub", href: "https://github.com/" },
+      { label: "Live app", href: "https://falsifier.vercel.app" },
+      { label: "GitHub", href: "https://github.com/PeterYousefi/Falsifier" },
       { label: "IBM AI Builders Challenge", tag: true },
     ],
     image: "/images/falsifier.jpg",
@@ -55,9 +55,9 @@ export const projects: Project[] = [
       "Designed the three-document approach and added a review step to edit prompts before spending image credits. Solved a Vercel Hobby serverless timeout issue by moving image generation to an Edge Function with a 60-second timeout.",
     stack: ["Next.js 14", "TypeScript", "React", "OpenAI API", "Vercel Edge", "Tailwind"],
     links: [
-      { label: "Live app", href: "https://example.com" },
-      { label: "GitHub", href: "https://github.com/" },
-      { label: "Demo video", href: "https://example.com" },
+      { label: "Live app", href: "https://continuity-omega.vercel.app" },
+      { label: "GitHub", href: "https://github.com/PeterYousefi/Continuity" },
+      { label: "Demo video", href: "https://youtu.be/uUA3l0dTKBk" },
     ],
     image: "/images/continuity.jpg",
   },
@@ -70,8 +70,8 @@ export const projects: Project[] = [
     myPart: "Scoped the problem and defined owner-editable output plus a fallback path for API downtime.",
     stack: ["Python", "Flask", "REST APIs", "IBM watsonx"],
     links: [
-      { label: "GitHub", href: "https://github.com/" },
-      { label: "Demo video", href: "https://example.com" },
+      { label: "GitHub", href: "https://github.com/PeterYousefi/Lumina" },
+      { label: "Demo video", href: "https://youtu.be/zZhvo4hOvd0" },
       { label: "IBM AI Builders Challenge", tag: true },
     ],
     image: "/images/lumina.jpg",
@@ -84,7 +84,7 @@ export const projects: Project[] = [
       "Pulls live NFL odds, scores, and player props into one dashboard with a bet-slip tracker, automatic P&L/ROI, and a responsible-gambling age gate on by default.",
     myPart: "Specified the dashboard, bet-slip tracking, and the default-on age gate.",
     stack: ["SQLite", "IBM watsonx", "React", "Node/Express"],
-    links: [{ label: "GitHub", href: "https://github.com/" }],
+    links: [{ label: "GitHub", href: "https://github.com/PeterYousefi/Sharp" }],
     image: "/images/sharp.jpg",
   },
   {
@@ -97,7 +97,7 @@ export const projects: Project[] = [
       "Defined the notification chain and required a human-in-the-loop step flagging unverified contacts before anything sends.",
     stack: [".NET", "IBM watsonx", "Llama 3.3", "GIS"],
     links: [
-      { label: "GitHub", href: "https://github.com/" },
+      { label: "GitHub", href: "https://github.com/PeterYousefi/GeoShield" },
       { label: "IBM AI Builders Challenge", tag: true },
     ],
     image: "/images/geoshield.jpg",

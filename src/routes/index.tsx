@@ -516,7 +516,7 @@ function Contact() {
               peter@petery.org
             </a>
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/peteryo"
               target="_blank"
               rel="noreferrer noopener"
               className="rounded-md border border-border bg-card px-5 py-2.5 text-sm font-medium transition-colors hover:bg-secondary"
@@ -524,7 +524,7 @@ function Contact() {
               LinkedIn
             </a>
             <a
-              href="https://github.com/"
+              href="https://github.com/PeterYousefi"
               target="_blank"
               rel="noreferrer noopener"
               className="rounded-md border border-border bg-card px-5 py-2.5 text-sm font-medium transition-colors hover:bg-secondary"
