@@ -281,7 +281,8 @@ function Hero() {
 }
 
 function Work() {
-  const [featured, ...rest] = projects;
+  const featured = projects[0]!;
+  const rest = projects.slice(1);
 
   return (
     <section id="work" className="rule-top bg-paper py-20 sm:py-28">
