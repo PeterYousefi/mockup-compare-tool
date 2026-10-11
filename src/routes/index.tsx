@@ -16,17 +16,17 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Peter Yousefi — Software Developer, Backend & Data" },
+      { title: "Peter Yousefi — GenAI & AI Engineer" },
       {
         name: "description",
         content:
-          "Peter Yousefi is a Toronto-based software developer working in Python, SQL and LLM tooling, with production data experience from a university HRIS.",
+          "Peter Yousefi is a Toronto-based AI engineer building agent and LLM systems that are measured, traceable and kept under human control.",
       },
-      { property: "og:title", content: "Peter Yousefi — Software Developer, Backend & Data" },
+      { property: "og:title", content: "Peter Yousefi — GenAI & AI Engineer" },
       {
         property: "og:description",
         content:
-          "Backend and data work in Python and SQL, six shipped applications, AZ-900 certified and studying for the AI-103.",
+          "Agent and LLM systems that show their work: evaluation, tracing and human approval built in. AZ-900 certified.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -112,7 +112,7 @@ function Header() {
         <a href="#top" className="font-display text-[1.05rem] font-semibold tracking-tight">
           Peter Yousefi
           <span className="ml-2 hidden font-mono text-[0.68rem] font-normal text-muted-foreground sm:inline">
-            /backend·data
+            /ai·engineering
           </span>
         </a>
 
@@ -195,19 +195,16 @@ function Hero() {
       <div className="grid gap-14 lg:grid-cols-[1.35fr_1fr] lg:gap-16">
         <div>
           <Reveal>
-            <p className="eyebrow">Software Developer · Backend &amp; Data · Toronto, ON</p>
+            <p className="eyebrow">AI Engineer · GenAI &amp; Agents · Toronto, ON</p>
           </Reveal>
           <Reveal delay={80}>
             <h1 className="mt-6 max-w-[22ch] text-4xl font-semibold leading-[1.05] sm:text-6xl">
-              I take real problems and turn them into working software.
+              I build AI systems that show their work.
             </h1>
           </Reveal>
           <Reveal delay={150}>
             <p className="mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              Computer Science graduate working in Python and SQL, with production data experience
-              from a university HRIS. Also works directly with AI models — mostly prompt engineering
-              and LLM tooling — and has built six applications that way. AZ-900 certified, currently
-              studying for the AI-103, moving toward backend and cloud work.
+              Computer Science graduate focused on GenAI and AI engineering. Builds agent and LLM systems where every run is recorded, model output is checked before it is trusted, and results are measured rather than claimed. AZ-900 certified, currently studying for the AI-103.
             </p>
           </Reveal>
           <Reveal delay={210}>
@@ -232,7 +229,7 @@ function Hero() {
                 <dt className="sr-only">Availability</dt>
                 <dd>
                   <span className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-primary align-middle" />
-                  Available for cloud &amp; backend roles · Toronto (UTC-5)
+                  Open to GenAI and AI engineering roles · Toronto (UTC-5)
                 </dd>
               </div>
               <div>
@@ -247,13 +244,13 @@ function Hero() {
           <div className="rounded-xl border border-border bg-card p-6 shadow-card">
             <p className="eyebrow">Profile</p>
             <p className="mt-3 font-display text-xl font-semibold">Peter Yousefi</p>
-            <p className="text-sm text-muted-foreground">Software Developer — Backend &amp; Data</p>
+            <p className="text-sm text-muted-foreground">AI Engineer — GenAI &amp; Agents</p>
 
             <dl className="mt-6 space-y-4 text-sm">
               <div>
                 <dt className="eyebrow">Core skills</dt>
                 <dd className="mt-2 flex flex-wrap gap-1.5">
-                  {["Python", "SQL", "LLM tooling", "Next.js"].map((s) => (
+                  {["Python", "TypeScript", "LLM applications", "Azure"].map((s) => (
                     <Chip key={s}>{s}</Chip>
                   ))}
                 </dd>
@@ -269,7 +266,7 @@ function Hero() {
               <div>
                 <dt className="eyebrow">Availability</dt>
                 <dd className="mt-2 text-muted-foreground">
-                  Open to cloud support, junior cloud engineer and backend roles
+                  Open to GenAI and AI engineering roles
                 </dd>
               </div>
             </dl>
@@ -290,7 +287,7 @@ function Work() {
         <SectionHeading
           eyebrow="Work"
           title="Selected projects"
-          lead="Six applications taken from a blank page to something usable — each one with a stated scope and the part I owned."
+          lead="Seven projects, each starting from a failure I wanted to prevent. Results are stated as measured, including the weak spots."
         />
 
         <Reveal className="mt-14">
@@ -310,7 +307,7 @@ function Work() {
                 {featured.description}
               </p>
               <p className="mt-4 border-l-2 border-primary/30 pl-4 text-sm leading-relaxed">
-                <span className="eyebrow">My part</span>
+                <span className="eyebrow">Outcome</span>
                 <br />
                 <span className="text-muted-foreground">{featured.myPart}</span>
               </p>
@@ -342,7 +339,7 @@ function Work() {
                     {project.description}
                   </p>
                   <p className="mt-4 border-l-2 border-primary/30 pl-4 text-sm leading-relaxed">
-                    <span className="eyebrow">My part</span>
+                    <span className="eyebrow">Outcome</span>
                     <br />
                     <span className="text-muted-foreground">{project.myPart}</span>
                   </p>
@@ -444,11 +441,7 @@ function About() {
                   things people can use, then making sure they hold up in production.
                 </p>
                 <p>
-                  Strongest hands-on work is with data — writing SQL against a live HRIS during an
-                  ERP migration where a bad record reaches someone's paycheque. Has taken six ideas
-                  from blank page to working apps using AI builder tooling; Continuity is live on
-                  Vercel. Passed AZ-900, studying for AI-103. AegisOps is designed around Azure
-                  deployment — next step is provisioning it for real.
+                  Strongest hands-on work started with data — writing SQL against a live HRIS during an ERP migration where a bad record reaches someone's paycheque. That habit shapes the AI projects here: they check model output, record what happened and keep a person in the loop. Built with AI-assisted tooling, with the effort going into design, validation and testing. Passed AZ-900, studying for AI-103.
                 </p>
                 <p>
                   Before this, coordinated international logistics and led a student society — part
@@ -505,8 +498,7 @@ function Contact() {
           <p className="eyebrow">Contact</p>
           <h2 className="mt-3 text-4xl font-semibold sm:text-5xl">Let's build something.</h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-            Open to backend and cloud roles — cloud support, junior cloud engineer, or
-            backend-leaning positions.
+            Open to GenAI and AI engineering roles. Email is the fastest way to reach me.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <a
